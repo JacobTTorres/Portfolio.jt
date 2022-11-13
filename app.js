@@ -1,26 +1,26 @@
 $(document).ready(function () {
 	$('#impact').mouseenter(function () {
-		$('#impactInfo').fadeIn(200);
+		$('#impactInfo').toggle('scale');
 	});
-	$('#impactInfo').mouseleave(function () {
+	$('.projectLink').mouseleave(function () {
 		$('#impactInfo').fadeOut(200);
 	});
 	$('#sun').mouseenter(function () {
-		$('#sunInfo').fadeIn(200);
+		$('#sunInfo').toggle('scale');
 	});
-	$('#sunInfo').mouseleave(function () {
+	$('.projectLink').mouseleave(function () {
 		$('#sunInfo').fadeOut(200);
 	});
 	$('#loop').mouseenter(function () {
-		$('#loopInfo').fadeIn(200);
+		$('#loopInfo').toggle('scale');
 	});
-	$('#loopInfo').mouseleave(function () {
+	$('.projectLink').mouseleave(function () {
 		$('#loopInfo').fadeOut(200);
 	});
 	$('#google').mouseenter(function () {
-		$('#googleInfo').fadeIn(200);
+		$('#googleInfo').toggle({ effect: 'scale', direction: 'horizontal' });
 	});
-	$('#googleInfo').mouseleave(function () {
+	$('.projectLink').mouseleave(function () {
 		$('#googleInfo').fadeOut(200);
 	});
 });

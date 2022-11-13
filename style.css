@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mr+Dafoe&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -64,7 +67,7 @@ ul{
 .navBar{
   position: fixed;
   width: 100vw;
-  height: 7vh;
+  height: 67.266px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,11 +127,11 @@ ul{
 }
 
 .headerContent{
-  background-image: url("images/backdrop.jpg");
+  background-image: url("images/banner.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  height: 70vh;
+  height: 572.688px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -151,13 +154,15 @@ padding-bottom: 25px;
   font-size: 28px;
   font-weight: 500;
   font-family: var(--info-font);
-  color: var(--primary-2);
+  color: var(--black);
 }
 
 /* about me  */
+
+
 .aboutMeContainer{
   width: 100vw;
-  height: 30vh;
+  height: 288.279px;
 }
 
 .aboutMeContent{
@@ -169,10 +174,11 @@ padding-bottom: 25px;
 }
 
 .aboutMeBox{
-  width: 60%;
+  width: 1152px;
   height: 200px;
   box-shadow: 3px 4px 8px rgba(0, 0, 0, .25);
   border-radius: .25vw;
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -202,7 +208,7 @@ padding-bottom: 25px;
 
 .skillContainer{
   width: 100vw;
-  height: 55vh;
+  height: 528.547px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +299,7 @@ padding-bottom: 25px;
 
 .projectsContainer{
   width: 100vw;
-  height: 85vh;
+  height: 816.844;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,4 +364,45 @@ padding-bottom: 25px;
   font-family: var(--header-font);
   font-size: 28px;
   color: var(--primary-3);
+}
+
+/* contact */
+
+.contactContainer{
+  width: 100vw;
+  height: 288.297px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactContent{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerName{
+  font-family: var(--header-font);
+  font-size: 34px;
+  margin: 15px 0;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.email,.phoneNum{
+  margin: 3px 0 5px 0;
+}
+
+.footerLinks{
+  width: 40px;
+  height: 40px;
 }
