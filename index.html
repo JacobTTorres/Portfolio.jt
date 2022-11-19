@@ -13,6 +13,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://kit.fontawesome.com/79a5acd10f.js" crossorigin="anonymous"></script>
 
   <script src="app.js"></script>
 
@@ -28,9 +29,17 @@
         <a href="#projects" class="navLinks">Projects</a>
         <a href="#contacts" class="navLinks">Contact</a>
       </div>
-
+      <i class="fa-solid fa-bars" id="menuIcon"></i>
     </div>
   </section>
+  <div class="menu">
+    <div class="menuDrop">
+      <a href="#aboutMe" class="navLinksMenu">About Me</a>
+      <a href="#skills" class="navLinksMenu">Skills</a>
+      <a href="#projects" class="navLinksMenu">Projects</a>
+      <a href="#contacts" class="navLinksMenu">Contact</a>
+    </div>
+  </div>
   <section class="header">
     <div class="headerContent">
       <img src="images/jacobT.png" alt="" class="myPic">
@@ -48,15 +57,23 @@
         </div>
         <div class="aboutRight">
           <h2 class="contactHeader">Contact Information</h2>
-          <ul>
-            <li class="contact">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p
-                class="contactInfo">
+          <ul class="aboutContact">
+            <li class="contact">
+              <p class="contactInfo">Email:</p>
+              <p class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+              <p class="contactInfo">
                 jacobttorres@hotmail.com</p>
             </li>
-            <li class="contact">Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="contactInfo">
+            <li class="contact">
+              <p class="contactInfo">Phone:</p>
+              <p class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+              <p class="contactInfo">
                 (605)880-5268</p>
             </li>
-            <li class="contact">Language:&nbsp;&nbsp;<p class="contactInfo">English</p>
+            <li class="contact">
+              <p class="contactInfo">Language:</p>
+              <p class="spaces">&nbsp;&nbsp;</p>
+              <p class="contactInfo">English</p>
             </li>
           </ul>
         </div>
@@ -129,12 +146,12 @@
         <div class="skillBracket">
           <div class="skill">
             <h4 class="skillName">
-              Python
+              Git/Github
             </h4>
-            <h4 class="percent">20%</h4>
+            <h4 class="percent">70%</h4>
           </div>
           <div class="progress">
-            <div class="progressPython"></div>
+            <div class="progressGit"></div>
           </div>
         </div>
         <div class="skillBracket">
@@ -172,9 +189,9 @@
           <img src="/images/impactPractice.jpg" alt="ImpactPractice" class="projectImg" id="impact">
           <div class="projectInfo" id="impactInfo">
             <div class="projInfoContainer">
-              <h1>Impact Landing page</h1>
-              <p>React.js & CSS</p>
-              <p>Partially Responsive</p>
+              <h1 class="infoHeader">Impact Landing page</h1>
+              <p class="infoSkillUsed">React.js & CSS</p>
+              <p class="infoResponsive">Partially Responsive</p>
             </div>
           </div>
           </img>
@@ -183,9 +200,9 @@
           <img src="images/sunnyside.jpg" alt="SunnySide" class="projectImg" id="sun">
           <div class="projectInfo" id="sunInfo">
             <div class="projInfoContainer">
-              <h1>Sunny Side Landing page</h1>
-              <p>React.js & CSS</p>
-              <p>Fully Responsive</p>
+              <h1 class="infoHeader">Sunny Side Landing page</h1>
+              <p class="infoSkillUsed">React.js & CSS</p>
+              <p class="infoResponsive">Fully Responsive</p>
             </div>
           </div>
         </a>
@@ -194,9 +211,9 @@
           <img src="images/loopstudiopic.jpg" alt="LoopStudio" class="projectImg" id="loop">
           <div class="projectInfo" id="loopInfo">
             <div class="projInfoContainer">
-              <h1>Loop Studio Landing page</h1>
-              <p>React.js & CSS</p>
-              <p>Fully Responsive</p>
+              <h1 class="infoHeader">Loop Studio Landing page</h1>
+              <p class="infoSkillUsed">React.js & CSS</p>
+              <p class="infoResponsive">Fully Responsive</p>
             </div>
           </div>
         </a>
@@ -204,9 +221,9 @@
           <img src="images/googleClonePic.png" alt="Google" class="projectImg" id="google">
           <div class="projectInfo" id="googleInfo">
             <div class="projInfoContainer">
-              <h1>Google Clone</h1>
-              <p>HTML, CSS, Jquery</p>
-              <p>Fully Responsive</p>
+              <h1 class="infoHeader">Google Clone</h1>
+              <p class="infoSkillUsed">HTML, CSS, Jquery</p>
+              <p class="infoResponsive">Fully Responsive</p>
             </div>
           </div>
         </a>

@@ -11,7 +11,7 @@ body{
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
   margin: 0;
-
+  height: 100vw;
 }
 h5{
   margin: 0;
@@ -72,7 +72,7 @@ ul{
   justify-content: center;
   align-items: center;
   background-color: var(--primary-0);
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbarContainer{
@@ -81,6 +81,7 @@ ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .title{
@@ -118,6 +119,22 @@ ul{
   text-decoration: underline;
 }
 
+.menuDrop{
+  position: fixed;
+  width: 70%;
+  height: 100%; 
+  background-color: var(--primary-2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  left: 1;
+  right: 0;
+  top: 1;
+  bottom: 1;
+  z-index: 1;
+}
+
 /* Header */
 
 .myPic{
@@ -142,7 +159,7 @@ padding-bottom: 25px;
 }
 
 .myName{
-  font-size:2.5vw;
+  font-size:40px;
   font-family: var(--header-font);
   font-weight: 900;
   -webkit-text-stroke: 1px #F8F8F8;
@@ -198,6 +215,7 @@ padding-bottom: 25px;
   justify-content: flex-start;
   align-items: center;
   font-family: var(--info-font);
+  height: 35px;
 }
 
 .contactInfo{
@@ -270,7 +288,7 @@ padding-bottom: 25px;
   background-color: var(--primary-1);
 }
 
-.progressHtml,.progressCss,.progressJS,.progressReact,.progressJquery,.progressPython,.progressGimp,.progressPhoto{
+.progressHtml,.progressCss,.progressJS,.progressReact,.progressJquery,.progressGit,.progressGimp,.progressPhoto{
   height: 100%;
   background-color: var(--primary-0);
 }
@@ -287,8 +305,8 @@ padding-bottom: 25px;
   width: 75%;
 }
 
-.progressPython{
-  width: 20%;
+.progressGit{
+  width: 70%;
 }
 
 .progressGimp,.progressPhoto{
@@ -299,7 +317,7 @@ padding-bottom: 25px;
 
 .projectsContainer{
   width: 100vw;
-  height: 816.844;
+  height: 816.844px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,6 +347,9 @@ padding-bottom: 25px;
   width: 550px;
   height: 302.34px;
  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .projectImg{
@@ -340,11 +361,8 @@ padding-bottom: 25px;
 
 .projectInfo{
   position: absolute;
-  top: 0;
-  right: 0;
   width: 92.64%;
   height: 88.29%;
-  padding: 17.5px 20px 17.5px 20px;
   display: none;
 }
 .projInfoContainer{
@@ -405,4 +423,185 @@ padding-bottom: 25px;
 .footerLinks{
   width: 40px;
   height: 40px;
+}
+
+@media only screen and (min-width: 850px){
+  #menuIcon{display: none;}
+  .menuDrop{display: none;}
+}
+
+@media only screen and (max-width: 1170px) {
+  .myName{
+    font-size: 4vw;
+  }
+
+  .navbarContainer{
+    width: 80%;
+  }
+
+  #menuIcon{
+    color: var(--complement-3);
+  }
+
+  #menuIcon:hover{
+    color: var(--complement-2);
+  }
+
+  .aboutMeBox,.skillContent,.projectContent{
+    width: 80%;
+  }
+
+  .projectContent{
+    height: 600px;
+  }
+  
+  .projectLink{
+    width: 38vw;
+    height: 25vw;
+  }
+
+  .infoHeader{
+    font-size: 100%;
+    margin: 5px;
+  }
+
+  .infoSkillUsed,.infoResponsive{
+    font-size: 90%;
+    margin: 5px;
+  }
+  
+  .footerName{
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .navBar{
+    height: 7%;
+    top: 0;
+  }
+
+  .linkContainer{
+    display: none;
+  }
+  
+  .headerContent{
+    margin-top: 20px;
+    height: 400px;
+    padding: 0;
+  }
+  .myPic{
+    height: 100px;
+    width: 100px;
+  }
+  .myJob{
+    margin: 0;
+    font-size: 2.5vh;
+  }
+
+  .aboutMeContainer{
+    height:50vw;
+  }
+  .aboutMeBox{
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .aboutContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aboutLeft,.aboutRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .aboutInfo{
+    max-width: 75%;
+    text-align: center;
+  }
+
+  .contactHeader,.aboutHeader{
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  .aboutContact{
+    margin: 0;
+  }
+
+  .contact{
+    height: 25%;
+  }
+
+  .spaces{
+    display: none;
+  }
+
+  .projectsContainer{
+    height: 120vh;
+  }
+  .projectContent{
+    height: 100%;
+  }
+
+  .firstRow,.secondRow{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .projectLink{
+    margin: 15px 0;
+    height: 212px;
+    width: 322.234px;
+  }
+  
+  .footerName{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 499px){
+  .aboutMeContainer{
+  height: 70vw;
+  }
+
+  .aboutHeader,.contactHeader{
+    font-size: 18px;
+  }
+
+  .skillContent{
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .sectionHeader{
+    margin: 20px;
+    font-size: 25px;
+  }
+
+  .leftSkills,.rightSkills{
+    padding: 0;
+    width: 80%;
+  }
+
+  .projectsContainer{
+    height: 115vh;
+  }
+
+  .projectContent{
+    height: 100%;
+  }
+
+  .contactContainer{
+    height: 80vh;
+  }
 }
