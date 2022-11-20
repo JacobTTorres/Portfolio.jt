@@ -133,7 +133,6 @@ ul{
   top: 1;
   bottom: 1;
   z-index: 1;
-  display: none;
 }
 
 /* Header */
@@ -428,6 +427,9 @@ padding-bottom: 25px;
 
 @media only screen and (min-width: 850px){
   #menuIcon{display: none;}
+  .menuDrop{
+  display: none;
+  }
 }
 
 @media only screen and (max-width: 1170px) {
