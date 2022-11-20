@@ -133,6 +133,7 @@ ul{
   top: 1;
   bottom: 1;
   z-index: 1;
+  display: none;
 }
 
 /* Header */
