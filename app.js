@@ -23,4 +23,7 @@ $(document).ready(function () {
 	$('.projectLink').mouseleave(function () {
 		$('#googleInfo').fadeOut(200);
 	});
+	$('#menuIcon').on('click', function () {
+		$('.menu').toggle('puff');
+	});
 });
